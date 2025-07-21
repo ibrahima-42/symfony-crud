@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Legende{% endblock %}
+
+{% block body %}
+    <h1>Edit Legende</h1>
+
+    {{ include('legende/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('app_legende_index') }}">back to list</a>
+
+    {{ include('legende/_delete_form.html.twig') }}
+{% endblock %}
