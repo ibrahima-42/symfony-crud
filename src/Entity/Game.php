@@ -2,11 +2,11 @@
 
 namespace App\Entity;
 
-use App\Repository\LegendeRepository;
+use App\Repository\GameRepository;
 use Doctrine\ORM\Mapping as ORM;
 
-#[ORM\Entity(repositoryClass: LegendeRepository::class)]
-class Legende
+#[ORM\Entity(repositoryClass: GameRepository::class)]
+class Game
 {
     #[ORM\Id]
     #[ORM\GeneratedValue]
@@ -16,14 +16,8 @@ class Legende
     #[ORM\Column(length: 50)]
     private ?string $name = null;
 
-    #[ORM\Column(length: 50)]
+    #[ORM\Column(length: 24)]
     private ?string $pseudo = null;
-
-    #[ORM\Column(length: 64)]
-    private ?string $email = null;
-
-    #[ORM\Column(length: 255)]
-    private ?string $ApiToken = null;
 
     public function getId(): ?int
     {
@@ -53,29 +47,4 @@ class Legende
 
         return $this;
     }
-
-    public function getEmail(): ?string
-    {
-        return $this->email;
-    }
-
-    public function setEmail(string $email): static
-    {
-        $this->email = $email;
-
-        return $this;
-    }
-
-    public function getApiToken(): ?string
-    {
-        return $this->ApiToken;
-    }
-
-    public function setApiToken(string $ApiToken): static
-    {
-        $this->ApiToken = $ApiToken;
-
-        return $this;
-    }
-
 }
