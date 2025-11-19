@@ -14,7 +14,6 @@
     font-size: 16px;
 }
 
-
 .header .container {
     display: flex;
     justify-content: space-between;
@@ -44,3 +43,58 @@
     font-weight: 700;
     line-height: 1.2;
 }
+
+.forme {
+    width: 300px;
+    margin: auto;
+    margin-top: 20vh;
+    display: flex ;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+}
+
+.forme label {
+    font-family: 'inter', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #585656;
+}
+
+.forme h1 {
+    text-align: center;
+}
+
+.forme input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.forme button {
+    width: 320px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.checkbox input {
+    width: 20px;
+}
+
+
+#login {
+    margin-top: 20px;
+    padding: 16px 24px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
